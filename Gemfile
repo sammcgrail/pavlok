@@ -50,3 +50,24 @@ gem 'valid_attribute', group: [:development, :test]
 gem 'shoulda-matchers', group: [:development, :test], require: false
 gem 'devise'
 gem 'foundation-rails'
+
+
+## end make it so
+gem 'jquery-datatables-rails', '~> 3.3.0'
+# badges
+gem 'coveralls', require: false
+
+# s3
+gem 'carrierwave'
+gem 'fog'
+group :development, :test do
+  gem "dotenv-rails"
+end
+
+# heroku
+gem 'rails_12factor', group: [:production, :staging]
+gem 'puma'
+ruby "2.1.5"
+
+#styles
+gem "font-awesome-rails"
